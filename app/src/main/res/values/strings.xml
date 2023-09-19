@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">StoryApp</string>
+    <string name="empty_name">Nama tidak boleh kosong</string>
+    <string name="invalid_name">Nama hanya boleh berisi huruf dan tidak boleh ada spasi di akhir</string>
+    <string name="empty_email">Email tidak boleh kosong.</string>
+    <string name="invalid_email">Email tidak valid</string>
+    <string name="empty_password">Password tidak boleh kosong</string>
+    <string name="rule_password">Kata sandi harus mengandung setidaknya satu huruf besar, huruf kecil, angka, simbol, dan tanpa spasi</string>
+    <string name="length_password">Minimal 8 karakter</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="enter_your_email">Masukkan email anda disini</string>
+    <string name="name">Name</string>
+    <string name="password">Password</string>
+    <string name="register">Register</string>
+    <string name="have_account">Sudah punya akun?</string>
+    <string name="dont_have_an_account">Belum punya akun?</string>
+    <string name="login">Login</string>
+    <string name="email">Email</string>
+    <string name="loading_error_message">Unable to fetch stories data</string>
+    <string name="upload">Upload</string>
+    <string name="logout">Logout</string>
+    <string name="maps">Maps</string>
+    <string name="normal_type">Normal</string>
+    <string name="satellite_type">Satellite</string>
+    <string name="terrain_type">Terrain</string>
+    <string name="hybrid_type">Hybrid</string>
+    <string name="retry">Retry</string>
+    <string name="add_story_floating_button">Add Story Floating Button</string>
+    <string name="Description">Deskripsi</string>
+    <string name="from_camera">Dari Kamera</string>
+    <string name="take_picture">Ambil foto</string>
+    <string name="form_gallery">Dari Galeri</string>
+
+</resources>

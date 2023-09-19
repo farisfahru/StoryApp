@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:background="@drawable/bg_bottom_sheet"
+    android:layout_height="wrap_content">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/bottom_sheet_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/take_picture"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RelativeLayout
+        android:id="@+id/rl_camera"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        app:layout_constraintStart_toStartOf="@id/bottom_sheet_title"
+        app:layout_constraintTop_toBottomOf="@id/bottom_sheet_title">
+
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ic_camera"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginBottom="20dp"
+            android:src="@drawable/ic_camera"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/bottom_sheet_tv_camera"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:drawablePadding="16dp"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@id/ic_camera"
+            android:gravity="bottom"
+            android:text="@string/from_camera"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="@id/ic_camera"
+            app:layout_constraintStart_toEndOf="@id/ic_camera"
+            app:layout_constraintTop_toTopOf="@id/ic_camera" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_gallery"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        app:layout_constraintStart_toStartOf="@id/rl_camera"
+        app:layout_constraintTop_toBottomOf="@id/rl_camera">
+
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ic_galery"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginBottom="20dp"
+            android:src="@drawable/ic_image"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/bottom_sheet_tv_galery"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:drawablePadding="16dp"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@id/ic_galery"
+            android:gravity="bottom"
+            android:text="@string/form_gallery"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="@id/ic_galery"
+            app:layout_constraintStart_toEndOf="@id/ic_galery"
+            app:layout_constraintTop_toTopOf="@id/ic_galery" />
+    </RelativeLayout>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
